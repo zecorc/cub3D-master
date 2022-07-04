@@ -1,0 +1,19 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/gcrocett/Desktop/cub3D-master'
+gcc -Wall -Wextra -Werror -g   -c -o files/main.o files/main.c
+ 
+gcc -Wall -Wextra -Werror -g   -c -o files/iwu.o files/iwu.c
+gcc -Wall -Wextra -Werror -g   -c -o files/gam3.o files/gam3.c
+gcc -Wall -Wextra -Werror -g   -c -o files/imputss.o files/imputss.c
+gcc -Wall -Wextra -Werror -g   -c -o files/get_next_line.o files/get_next_line.c
+gcc -Wall -Wextra -Werror -g   -c -o files/get_next_line_utils.o files/get_next_line_utils.c
+ 
+gcc -Wall -Wextra -Werror -g   -c -o files/parse.o files/parse.c
+gcc -Wall -Wextra -Werror -g   -c -o files/parse_utils.o files/parse_utils.c
+gcc -Wall -Wextra -Werror -g   -c -o files/parse_set1.o files/parse_set1.c
+gcc -Wall -Wextra -Werror -g   -c -o files/parse_set2.o files/parse_set2.c
+gcc -Wall -Wextra -Werror -g   -c -o files/parse_utils_2.o files/parse_utils_2.c
+gcc -Wall -Wextra -Werror -g   -c -o files/atoi.o files/atoi.c
+gcc -Wall -Wextra -Werror -g -lmlx -framework OpenGL -framework AppKit -lm -I includes files/main.o files/iwu.o files/gam3.o files/imputss.o files/get_next_line.o files/get_next_line_utils.o files/parse.o files/parse_utils.o files/parse_set1.o files/parse_set2.o files/parse_utils_2.o files/atoi.o -o cub3D
+make: Leaving directory `/Users/gcrocett/Desktop/cub3D-master'
+ 
